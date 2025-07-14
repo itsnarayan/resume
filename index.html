@@ -62,6 +62,7 @@
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Achievements</span></a></li>
           <li><a href="#languages" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Languages</span></a></li>
+          <li><a href="#blogs" class="nav-link scrollto"><i class="bx bx-edit"></i> <span>Blogs</span></a></li>
           <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> --> -->
         </ul>
       </nav><!-- .nav-menu -->
@@ -84,7 +85,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>8 years of total experience in Software Automation, Infra Automation and Software Quality Assurance.</p>
+          <p>11 years of total experience in Software Automation, Infra Automation and Software Quality Assurance.</p>
           <p>Currently working at GMO Globalsign Japan as Lead DevOps Engineer.</p>
           <p>Previously worked at FastRetailing Japan as Lead Software Development Engineer in Test (SDET).</p>
         </div>
@@ -447,7 +448,164 @@
 
       </div>
     </section>
-    <!-- End achievements Section -->
+    <!-- End Languages Section -->
+
+    <!-- ======= Blogs Section ======= -->
+    <section id="blogs" class="blogs section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Blogs</h2>
+          <p>Sharing knowledge and experiences in DevOps, Cloud Computing, and Technology</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="blog-container">
+              <!-- Dynamic Medium Blog Posts -->
+              <div id="medium-feed" class="row">
+                <!-- Blog posts will be loaded here dynamically -->
+              </div>
+              
+              <!-- Loading indicator -->
+              <div id="loading" class="text-center">
+                <div class="spinner-border" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <p>Loading latest articles...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Medium Blog Integration Script -->
+    <script>
+      // Configuration - Replace with your Medium username
+      const MEDIUM_USERNAME = 'itsnarayan'; // Replace with your actual Medium username
+      const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}`;
+      
+      // Function to fetch and display Medium articles
+      async function loadMediumArticles() {
+        try {
+          const response = await fetch(RSS_URL);
+          const data = await response.json();
+          
+          if (data.status === 'ok' && data.items.length > 0) {
+            displayArticles(data.items);
+          } else {
+            showError('No articles found or unable to fetch articles.');
+          }
+        } catch (error) {
+          console.error('Error fetching Medium articles:', error);
+          showError('Unable to load articles. Please check your internet connection.');
+        } finally {
+          document.getElementById('loading').style.display = 'none';
+        }
+      }
+      
+      // Function to display articles
+      function displayArticles(articles) {
+        const feedContainer = document.getElementById('medium-feed');
+        feedContainer.innerHTML = '';
+        
+        articles.slice(0, 6).forEach(article => {
+          const articleDate = new Date(article.pubDate).toLocaleDateString();
+          const description = article.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+          
+          // Extract thumbnail image from article content
+          const thumbnail = extractThumbnail(article);
+          
+          const articleHTML = `
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card h-100 shadow-sm">
+                ${thumbnail ? `
+                  <img src="${thumbnail}" class="card-img-top" alt="${article.title}" style="height: 200px; object-fit: cover;" onerror="this.style.display='none'">
+                ` : ''}
+                <div class="card-body">
+                  <h5 class="card-title">${article.title}</h5>
+                  <p class="card-text text-muted small">
+                    <i class="bx bx-calendar"></i> Published on ${articleDate}
+                  </p>
+                  <p class="card-text">${description}</p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto">
+                    <a href="${article.link}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                      <i class="bx bx-link-external"></i> Read on Medium
+                    </a>
+                    <small class="text-muted">
+                      <i class="bx bx-time"></i> ${getReadTime(article.description)} min read
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          feedContainer.innerHTML += articleHTML;
+        });
+      }
+      
+      // Function to extract thumbnail from article content
+      function extractThumbnail(article) {
+        // Try to get thumbnail from different sources
+        if (article.thumbnail) {
+          return article.thumbnail;
+        }
+        
+        // Extract image from content/description
+        const imgRegex = /<img[^>]+src="([^">]+)"/i;
+        const match = article.content ? article.content.match(imgRegex) : article.description.match(imgRegex);
+        
+        if (match && match[1]) {
+          return match[1];
+        }
+        
+        // Try to get enclosure (some RSS feeds include images here)
+        if (article.enclosure && article.enclosure.link) {
+          return article.enclosure.link;
+        }
+        
+        return null;
+      }
+      
+      // Function to estimate read time
+      function getReadTime(content) {
+        const wordsPerMinute = 200;
+        const wordCount = content.split(' ').length;
+        return Math.ceil(wordCount / wordsPerMinute);
+      }
+      
+      // Function to show error message
+      function showError(message) {
+        const feedContainer = document.getElementById('medium-feed');
+        feedContainer.innerHTML = `
+          <div class="col-12">
+            <div class="alert alert-info text-center">
+              <h5>Medium Articles</h5>
+              <p>${message}</p>
+              <p>To display your articles automatically:</p>
+              <ol class="text-left">
+                <li>Replace 'your-medium-username' in the script with your actual Medium username</li>
+                <li>Make sure your Medium profile is public</li>
+                <li>Refresh the page</li>
+              </ol>
+              <a href="https://medium.com/@${MEDIUM_USERNAME}" class="btn btn-outline-primary" target="_blank">
+                Visit Medium Profile
+              </a>
+            </div>
+          </div>
+        `;
+      }
+      
+      // Load articles when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        // Add a small delay to ensure the section is visible
+        setTimeout(loadMediumArticles, 1000);
+      });
+    </script>
+    <!-- End Blogs Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <!-- <section id="testimonials" class="testimonials section-bg">
