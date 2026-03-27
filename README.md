@@ -1,2 +1,0 @@
-# resume
-Web Application resume
