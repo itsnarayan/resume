@@ -3,811 +3,551 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narayan Kundgir — Cloud Infrastructure Engineer</title>
+  <meta name="description" content="Portfolio of Narayan Kundgir — Cloud Infrastructure Engineer with 12+ years of experience in AWS, Kubernetes, Terraform, and platform engineering.">
+  <meta name="keywords" content="Cloud Engineer, AWS, Kubernetes, Terraform, Platform Engineering, DevOps">
 
-  <title>Narayan - Resume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.9.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Narayan Kundgir</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/narayankundgir" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="medium"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/narayan-kundgir-00248497/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Achievements</span></a></li>
-          <li><a href="#languages" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Languages</span></a></li>
-          <li><a href="#blogs" class="nav-link scrollto"><i class="bx bx-edit"></i> <span>Blogs</span></a></li>
-          <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> --> -->
-        </ul>
-      </nav><!-- .nav-menu -->
+  <!-- ======= Navigation ======= -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">NK</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </header><!-- End Header -->
+  </nav>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Narayan Kundgir</h1>
-      <p>I'm <span class="typed" data-typed-items="DevOps Engineer, Cloud Enthusiast, AWS Certified Solutions Architect, Certified Kubernetes Administrator(CKA), Certified Kubernetes Application Developer(CKAD), Terraform Certified, JLPT N2 Certified"></span></p>
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Narayan Kundgir</h1>
+      <h2 class="hero-title">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </h2>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/itsnarayan" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/itsnarayan" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://medium.com/@itsnarayan" target="_blank" rel="noopener" aria-label="Medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zm2.94 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg>
+        </a>
+        <a href="https://twitter.com/narayankundgir" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+      </div>
     </div>
-  </section><!-- End Hero -->
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+    </a>
+  </section>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>11 years of total experience in Software Automation, Infra Automation and Software Quality Assurance.</p>
-          <p>Currently working at GMO Globalsign Japan as Lead DevOps Engineer.</p>
-          <p>Previously worked at FastRetailing Japan as Lead Software Development Engineer in Test (SDET).</p>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>About Me</h2>
+      <div class="about-grid">
+        <div class="about-image" data-animate>
+          <img src="assets/img/profile-img.jpg" alt="Narayan Kundgir" loading="lazy">
         </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Lead DevOps Engineer.</h3>
-             <p> <!--class="fst-italic" -->
-              Working experience in various QA automation, DevOps tools & softwares.
-            </p>
-            <p>
-              As SDET 
-              - Hands on Experience in RestAssured, TestNG, Cucumber, Selenium, Jmeter, Gatling & other testing Tool.
-            </p>
-            <p>
-              As DevOps
-              - Jenkins, Git, AWS services, Terraform, Docker, Kubernetes, strong knowledge on Cloud networking.
-            </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p> </p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Amazon Web Services (AWS)<i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kubernetes <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Docker <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Terraform <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Site Reliability Engineering <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Shell Scripting <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Summary</h2>
-          <p> </p>
-        </div>
-        <div class="row">
-          <h3 class="resume-title">Professional Experience</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="resume-item pb-0">
-              <h4>Lead DevOps Engineer</h4>
-              <p>Globalsign - Permanent</p>
-              <p>May 2022 - Present</p>
-              <p><em>Tokyo, Japan</em></p>
-              <ul>
-                <li>Maintain Infrastructure in Dev, QA & Production Environment.</li>
-                <li>Implementing Monitoring & alert.</li>
-                <li>AWS Costs Management and Optimization</li>
-                <li>Periodic maintainance of Infra resources such as SSL Certificates</li>
-                <li>Disaster Recovery (DR) and Business Continuation</li>
-              </ul>
-            </div>
-
-            <div class="resume-item pb-0">
-              <h4>Lead SDET</h3>
-              <p>Fastretailing - Permanent</p>
-              <p>Aug 2018 - May 2022</p>
-              <p><em>Tokyo, Japan</em></p>
-              <ul>
-                <li>Build,maintain test scripts using an automation test tool including TDD/BDD techniques</li>
-                <li>Create test automation frameworks</li>
-                <li>Training the engineering team write and maintain tests and test suites</li>
-                <li>Integrating Test Automation into CI/CD Pipelines</li>
-                <li>Test report integration with Slack, JIRA , TestRail & S3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="resume-item">
-              <h4>SDET</h4>
-              <p>Rakuten - Contract</p>
-              <p>Aug 2017 - Jul 2018</p>
-              <p><em>Tokyo, Japan</em></p>
-              <ul>
-                <li>Develop,execute & maintain automation test scripts leveraging open source tools</li>
-                <!-- <li>Postman, Gatling, REST-Assured +TestNG + Cucumber.</li> -->
-                <li>Preparation of Test Plans & Policies, Reports</li>
-                <li>Development of Automation workflows in Jenkins</li>
-                <li>A strong background in driving delivery in CI-CD /Agile environments</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Quality Assurance Engineer</h4>
-              <p>NTT DATA Services - Permanent</p>
-              <p>Jun 2014 - Aug 2017</p>
-              <p><em>Pune, India</em></p>
-              <ul>
-                <li>Experience in end to end performance testing of Web Application.</li>
-                <li>Worked extensively in JMeter scripting of complex user journeys in various domain.</li>
-                <li>Understanding NFR & Preparation of Workload model.</li>
-                <li>Performance monitoring, Logs Analysis & Performance Tuning.</li>
-                <li>Good understanding of Database Architecture</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <h3 class="resume-title">Education</h3>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="resume-item pb-0">
-              <h4>Pune University</h4>
-              <p>Bachelor of Engineering, Computer Engineering</p>
-              <p>2011 - 2014</p>
-              <h5>Grade A+</h5>
+        <div class="about-text" data-animate>
+          <p>Cloud Infrastructure Engineer with 12 years of experience in cloud architecture, platform engineering, and infrastructure automation. Bilingual in English and Japanese (JLPT N2). Built and managed all AWS cloud infrastructure independently at GMO GlobalSign Japan for 3+ years — 10 production services end-to-end, covering architecture, cost optimization, disaster recovery, security, and production operations.</p>
+          <p>Beyond infrastructure, I build internal platforms and developer tooling that enable engineering teams to ship faster — self-service environments, automated cost controls, and deployment orchestration. Now growing the infrastructure team and establishing scalable practices.</p>
         </div>
       </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Achievements Section ======= -->
-    <section id="achievements" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Achievements</h2>
+      <div class="stats-grid" data-animate>
+        <div class="stat-card">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Years Experience</span>
         </div>
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Production Services</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Technical Articles</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-devops">Devops</li>
-              <li data-filter=".filter-k8s">Kubernetes</li>
-              <li data-filter=".filter-aws">AWS</li>
-              <li data-filter=".filter-jlpt">JLPT</li>
-              <li data-filter=".filter-ai">AI</li>
+  <!-- ======= Experience Section ======= -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Cloud Infrastructure Engineer</h3>
+              <span class="timeline-company">GMO GlobalSign Japan</span>
+              <span class="timeline-meta">May 2022 — Present &middot; Tokyo, Japan</span>
+            </div>
+            <p>Built and managed all cloud infrastructure independently for 3+ years — 10 services (Ruby/Go/Java, PostgreSQL) across staging, pre-production, and production. Now growing the team.</p>
+            <h4>Infrastructure &amp; Architecture</h4>
+            <ul>
+              <li>AWS: EC2, ECS (Fargate), Aurora PostgreSQL, ElastiCache (Redis), OpenSearch, MSK (Kafka), Amazon MQ, WAF, Route53, Lambda, EventBridge</li>
+              <li>Monitoring: CloudWatch, New Relic, Pandora FMS</li>
+              <li>All infrastructure as code in Terraform (migrated 0.12→1.3), deployed via Bitbucket Pipelines</li>
+              <li>Evaluated EKS for StatefulSet and persistent storage requirements</li>
+            </ul>
+            <h4>Cost Optimization — 61% non-prod, 30% production savings</h4>
+            <ul>
+              <li>Designed per-developer staging with modular Terraform + Lambda cost optimizer (Python/EventBridge) with developer self-service controls — 61% reduction (168→65 hrs/week)</li>
+              <li>Implemented Reserved Instances and Savings Plans (RDS, EC2, Fargate) — 30% production cost reduction</li>
+            </ul>
+            <h4>Reliability &amp; DR</h4>
+            <ul>
+              <li>Aurora Multi-AZ failover — GMO Awards 2025 for 3-minute AWS outage recovery</li>
+              <li>Designing cross-region standby (Tokyo→Osaka): DMS replication, AMI sync, DNS failover</li>
+            </ul>
+            <h4>Security</h4>
+            <ul>
+              <li>Layered defense: AWS WAF at ALB (managed + custom rules) with Trend Micro IPS on host instances</li>
+            </ul>
+            <h4>Operations &amp; Maintenance</h4>
+            <ul>
+              <li>Aurora engine upgrades, ECS task definitions, OS patching, Docker image updates, SSL/RI renewals, Terraform state management</li>
+              <li>Monthly cost analysis with Trusted Advisor; IAM policy audits; DNS management (Route53, Cloudflare); alert threshold tuning; yearly DR exercises</li>
+            </ul>
+            <h4>Automation</h4>
+            <ul>
+              <li>Release Orchestrator: YAML-driven automated deployment scheduling across service repos</li>
+              <li>ECS rolling deployments for zero-downtime releases</li>
             </ul>
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-k8s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/cka.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/cka.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CKA"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Software Engineer (Lead SDET)</h3>
+              <span class="timeline-company">Fast Retailing</span>
+              <span class="timeline-meta">Aug 2018 — May 2022 &middot; Tokyo, Japan</span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-k8s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/ckad.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/ckad.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CKAD"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/hcta.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/hcta.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Terraform Certified"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/dca.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/dca.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Docker Certified"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/devops-basics.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/devops-basics.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Devops Basics"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/ansible.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/ansible.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ansible"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/bcp-dr.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/bcp-dr.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Business Continuity Planning and Disaster Recovery"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-devops">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/bitbucket-pipeline.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/bitbucket-pipeline.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bitbucket Pipelines"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-jlpt">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/jlpt-n2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/jlpt-n2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JLPT-N2"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-jlpt">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/jlpt-n3.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/jlpt-n3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JLPT-N3"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-jlpt">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/jlpt-n4.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/jlpt-n4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JLPT-N4"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-aws">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/aws-saa03.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/aws-saa03.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AWS-SAA"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certificate/claude-code-in-action.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/certificate/claude-code-in-action.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Claude Code in Action"><i class="bx bx-plus"></i></a>
-                <a href="achievement-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Achievements Section -->
-
-    <!-- ======= Languages Section ======= -->
-    <section id="languages" class="languages">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Languages</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">English</a></h4>
-            <p class="description">Full professional proficiency</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Hindi</a></h4>
-            <p class="description">Professional working proficiency</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Japanese</a></h4>
-            <p class="description">Professional working proficiency</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Marathi</a></h4>
-            <p class="description">Native or bilingual proficiency</p>
+            <p>Led test automation and CI/CD pipeline engineering, progressively building infrastructure automation capabilities.</p>
+            <ul>
+              <li>Designed and owned CI/CD pipelines in Jenkins (Groovy), integrating automated testing into deployment workflows</li>
+              <li>Built test automation frameworks (RestAssured, TestNG, Cucumber, Selenium, Gatling) adopted across multiple teams</li>
+              <li>Trained engineering teams on test development, improving velocity and code quality</li>
+              <li>Adopted Docker, Kubernetes, AWS, Terraform, and Ansible — transitioning from quality engineering into DevOps</li>
+            </ul>
           </div>
         </div>
 
-      </div>
-    </section>
-    <!-- End Languages Section -->
-
-    <!-- ======= Blogs Section ======= -->
-    <section id="blogs" class="blogs section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Blogs</h2>
-          <p>Sharing knowledge and experiences in DevOps, Cloud Computing, and Technology</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-            <div class="blog-container">
-              <!-- Dynamic Medium Blog Posts -->
-              <div id="medium-feed" class="row">
-                <!-- Blog posts will be loaded here dynamically -->
-              </div>
-              
-              <!-- Loading indicator -->
-              <div id="loading" class="text-center">
-                <div class="spinner-border" role="status">
-                  <span class="sr-only">Loading...</span>
-                </div>
-                <p>Loading latest articles...</p>
-              </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Consultant (SDET)</h3>
+              <span class="timeline-company">Rakuten</span>
+              <span class="timeline-meta">Aug 2017 — Jul 2018 &middot; Tokyo, Japan</span>
             </div>
+            <p>Automated testing for large-scale e-commerce web services, with exposure to containerized and cloud-native monitoring environments.</p>
+            <ul>
+              <li>Built automated test suites for web services using REST-Assured, Gatling, Postman, TestNG, and Cucumber</li>
+              <li>Developed CI/CD automation workflows in Jenkins, enabling faster release cycles</li>
+              <li>Worked with Docker, Kubernetes, and cloud monitoring tools (Datadog, New Relic) in an Agile delivery environment</li>
+              <li>Authored test plans, policies, and executive reports for stakeholder visibility</li>
+            </ul>
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Medium Blog Integration Script -->
-    <script>
-      // Configuration - Replace with your Medium username
-      const MEDIUM_USERNAME = 'itsnarayan'; // Replace with your actual Medium username
-      const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}`;
-      
-      // Function to fetch and display Medium articles
-      async function loadMediumArticles() {
-        try {
-          const response = await fetch(RSS_URL);
-          const data = await response.json();
-          
-          if (data.status === 'ok' && data.items.length > 0) {
-            displayArticles(data.items);
-          } else {
-            showError('No articles found or unable to fetch articles.');
-          }
-        } catch (error) {
-          console.error('Error fetching Medium articles:', error);
-          showError('Unable to load articles. Please check your internet connection.');
-        } finally {
-          document.getElementById('loading').style.display = 'none';
-        }
-      }
-      
-      // Function to display articles
-      function displayArticles(articles) {
-        const feedContainer = document.getElementById('medium-feed');
-        feedContainer.innerHTML = '';
-        
-        articles.slice(0, 6).forEach(article => {
-          const articleDate = new Date(article.pubDate).toLocaleDateString();
-          const description = article.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
-          
-          // Extract thumbnail image from article content
-          const thumbnail = extractThumbnail(article);
-          
-          const articleHTML = `
-            <div class="col-lg-6 col-md-12 mb-4">
-              <div class="card h-100 shadow-sm">
-                ${thumbnail ? `
-                  <img src="${thumbnail}" class="card-img-top" alt="${article.title}" style="height: 200px; object-fit: cover;" onerror="this.style.display='none'">
-                ` : ''}
-                <div class="card-body">
-                  <h5 class="card-title">${article.title}</h5>
-                  <p class="card-text text-muted small">
-                    <i class="bx bx-calendar"></i> Published on ${articleDate}
-                  </p>
-                  <p class="card-text">${description}</p>
-                  <div class="d-flex justify-content-between align-items-center mt-auto">
-                    <a href="${article.link}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
-                      <i class="bx bx-link-external"></i> Read on Medium
-                    </a>
-                    <small class="text-muted">
-                      <i class="bx bx-time"></i> ${getReadTime(article.description)} min read
-                    </small>
-                  </div>
-                </div>
-              </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer — Performance Engineering</h3>
+              <span class="timeline-company">NTT DATA Services</span>
+              <span class="timeline-meta">Jul 2014 — Aug 2017 &middot; Pune, India</span>
             </div>
-          `;
-          
-          feedContainer.innerHTML += articleHTML;
-        });
-      }
-      
-      // Function to extract thumbnail from article content
-      function extractThumbnail(article) {
-        // Try to get thumbnail from different sources
-        if (article.thumbnail) {
-          return article.thumbnail;
-        }
-        
-        // Extract image from content/description
-        const imgRegex = /<img[^>]+src="([^">]+)"/i;
-        const match = article.content ? article.content.match(imgRegex) : article.description.match(imgRegex);
-        
-        if (match && match[1]) {
-          return match[1];
-        }
-        
-        // Try to get enclosure (some RSS feeds include images here)
-        if (article.enclosure && article.enclosure.link) {
-          return article.enclosure.link;
-        }
-        
-        return null;
-      }
-      
-      // Function to estimate read time
-      function getReadTime(content) {
-        const wordsPerMinute = 200;
-        const wordCount = content.split(' ').length;
-        return Math.ceil(wordCount / wordsPerMinute);
-      }
-      
-      // Function to show error message
-      function showError(message) {
-        const feedContainer = document.getElementById('medium-feed');
-        feedContainer.innerHTML = `
-          <div class="col-12">
-            <div class="alert alert-info text-center">
-              <h5>Medium Articles</h5>
-              <p>${message}</p>
-              <p>To display your articles automatically:</p>
-              <ol class="text-left">
-                <li>Replace 'your-medium-username' in the script with your actual Medium username</li>
-                <li>Make sure your Medium profile is public</li>
-                <li>Refresh the page</li>
-              </ol>
-              <a href="https://medium.com/@${MEDIUM_USERNAME}" class="btn btn-outline-primary" target="_blank">
-                Visit Medium Profile
-              </a>
-            </div>
+            <p>Systems-level performance engineering — profiling, tuning, and optimizing infrastructure, databases, and application servers.</p>
+            <ul>
+              <li>Designed and executed end-to-end performance testing strategies for web applications using JMeter, establishing NFR baselines and workload models</li>
+              <li>Tuned application and database infrastructure: Apache, Tomcat, Oracle, MySQL, PostgreSQL, DB2 — resolving bottlenecks across the full stack</li>
+              <li>Monitored and profiled applications using Dynatrace APM, jconsole, jprofiler, and jvisualVM for deep performance analysis</li>
+              <li>Diagnosed production latency issues through network trace analysis using browser developer tools and packet capture</li>
+              <li>Delivered performance reports and executive summaries translating technical findings into stakeholder decisions</li>
+            </ul>
           </div>
-        `;
-      }
-      
-      // Load articles when page loads
-      document.addEventListener('DOMContentLoaded', function() {
-        // Add a small delay to ensure the section is visible
-        setTimeout(loadMediumArticles, 1000);
-      });
-    </script>
-    <!-- End Blogs Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-
-           <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>-->
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Certifications Section ======= -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Certifications</h2>
+      <div class="filter-buttons" data-animate>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+        <button class="filter-btn" data-filter="kubernetes">Kubernetes</button>
+        <button class="filter-btn" data-filter="aws">AWS</button>
+        <button class="filter-btn" data-filter="jlpt">JLPT</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+      <div class="cert-grid" data-animate>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        <div class="cert-card" data-category="kubernetes">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/cka.jpg" alt="Certified Kubernetes Administrator" loading="lazy">
+          </div>
+          <p class="cert-label">CKA</p>
+        </div>
 
-  <!-- Template Main JS File -->
+        <div class="cert-card" data-category="kubernetes">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/ckad.jpg" alt="Certified Kubernetes Application Developer" loading="lazy">
+          </div>
+          <p class="cert-label">CKAD</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/hcta.jpg" alt="Terraform Associate" loading="lazy">
+          </div>
+          <p class="cert-label">Terraform Associate</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/dca.jpg" alt="Docker Certified Associate" loading="lazy">
+          </div>
+          <p class="cert-label">Docker Certified</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/devops-basics.jpg" alt="DevOps Basics" loading="lazy">
+          </div>
+          <p class="cert-label">DevOps Basics</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/ansible.jpg" alt="Ansible" loading="lazy">
+          </div>
+          <p class="cert-label">Ansible</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/bcp-dr.jpg" alt="BCP-DR" loading="lazy">
+          </div>
+          <p class="cert-label">BCP-DR</p>
+        </div>
+
+        <div class="cert-card" data-category="devops">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/bitbucket-pipeline.jpg" alt="Bitbucket Pipelines" loading="lazy">
+          </div>
+          <p class="cert-label">Bitbucket Pipelines</p>
+        </div>
+
+        <div class="cert-card" data-category="aws">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/aws-saa03.jpg" alt="AWS Solutions Architect Associate" loading="lazy">
+          </div>
+          <p class="cert-label">AWS SAA-C03</p>
+        </div>
+
+        <div class="cert-card" data-category="jlpt">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/jlpt-n2.jpg" alt="JLPT N2" loading="lazy">
+          </div>
+          <p class="cert-label">JLPT N2</p>
+        </div>
+
+        <div class="cert-card" data-category="jlpt">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/jlpt-n3.png" alt="JLPT N3" loading="lazy">
+          </div>
+          <p class="cert-label">JLPT N3</p>
+        </div>
+
+        <div class="cert-card" data-category="jlpt">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/jlpt-n4.png" alt="JLPT N4" loading="lazy">
+          </div>
+          <p class="cert-label">JLPT N4</p>
+        </div>
+
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificate/claude-code-in-action.png" alt="Claude Code in Action" loading="lazy">
+          </div>
+          <p class="cert-label">Claude Code in Action</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Skills</h2>
+      <div class="skills-grid" data-animate>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            Cloud (AWS)
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">ECS</span>
+            <span class="skill-tag">EKS</span>
+            <span class="skill-tag">Fargate</span>
+            <span class="skill-tag">Aurora</span>
+            <span class="skill-tag">ElastiCache</span>
+            <span class="skill-tag">OpenSearch</span>
+            <span class="skill-tag">MSK</span>
+            <span class="skill-tag">Lambda</span>
+            <span class="skill-tag">EventBridge</span>
+            <span class="skill-tag">WAF</span>
+            <span class="skill-tag">Route53</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">DMS</span>
+            <span class="skill-tag">CloudWatch</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            IaC &amp; CI/CD
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Bitbucket Pipelines</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Jenkins</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Containers
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">ECS</span>
+            <span class="skill-tag">EKS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Monitoring
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CloudWatch</span>
+            <span class="skill-tag">New Relic</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Loki</span>
+            <span class="skill-tag">Alertmanager</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Security
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS WAF</span>
+            <span class="skill-tag">Trend Micro</span>
+            <span class="skill-tag">IAM</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            Programming
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Shell Scripting</span>
+            <span class="skill-tag">Groovy</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Aurora PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Publications Section ======= -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Publications</h2>
+      <div class="publications-grid" data-animate>
+
+        <a href="https://medium.com/@itsnarayan/when-redis-fails-over-but-your-service-doesnt-a-postmortem-from-the-trenches-42f69fe00047" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2026</span>
+          <h3>When Redis Fails Over But Your Service Doesn't</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/monitor-aws-internals-to-stay-in-control-aeef07d70971" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2025</span>
+          <h3>Monitor AWS Internals to Stay in Control</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/reducing-deployment-pain-with-prebuilt-amis-and-automation-using-packer-17302dbf3d3f" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2025</span>
+          <h3>Reducing Deployment Pain with Prebuilt AMIs using Packer</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/rds-instance-to-aurora-cluster-migration-using-read-replica-1264784ce6bb" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2024</span>
+          <h3>RDS to Aurora Migration Using Read Replica</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/optimizing-aws-costs-a-strategic-journey-through-resource-efficiency-and-reserved-instances-5e538fb726c5" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2024</span>
+          <h3>Optimizing AWS Costs</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/optimizing-aws-infrastructure-leveraging-terraform-for-low-coupling-and-high-cohesion-a5ae6049ab1e" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2023</span>
+          <h3>Terraform Low Coupling &amp; High Cohesion</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="https://medium.com/@itsnarayan/terraform-version-upgrade-from-0-12-to-1-3-464bf9ccbd77" class="pub-card" target="_blank" rel="noopener">
+          <span class="pub-year">2023</span>
+          <h3>Terraform Upgrade 0.12 to 1.3</h3>
+          <span class="pub-link">Read on Medium
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Languages Section ======= -->
+  <section id="languages" class="section section-alt section-compact">
+    <div class="container">
+      <h2 class="section-title" data-animate>Languages</h2>
+      <div class="languages-grid" data-animate>
+        <div class="lang-card">
+          <span class="lang-name">English</span>
+          <span class="lang-level">Full Professional</span>
+        </div>
+        <div class="lang-card">
+          <span class="lang-name">Japanese</span>
+          <span class="lang-level">JLPT N2</span>
+        </div>
+        <div class="lang-card">
+          <span class="lang-name">Hindi</span>
+          <span class="lang-level">Professional</span>
+        </div>
+        <div class="lang-card">
+          <span class="lang-name">Marathi</span>
+          <span class="lang-level">Native</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/itsnarayan" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/itsnarayan" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://medium.com/@itsnarayan" target="_blank" rel="noopener" aria-label="Medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zm2.94 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg>
+        </a>
+        <a href="https://twitter.com/narayankundgir" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Narayan Kundgir</p>
+    </div>
+  </footer>
+
+  <!-- ======= Lightbox Modal ======= -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
